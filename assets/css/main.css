@@ -374,8 +374,8 @@ body {
 
 .report-thumb {
 	flex-shrink: 0;
-	width: 200px;
-	height: 110px;
+	width: 140px;
+	height: 80px;
 	border-radius: 8px;
 	overflow: hidden;
 	background: #f0f2f5;
