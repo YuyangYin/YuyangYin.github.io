@@ -355,9 +355,9 @@ body {
 
 .report-card {
 	display: flex;
-	align-items: flex-start;
-	gap: 18px;
-	padding: 20px 24px;
+	align-items: center;
+	gap: 20px;
+	padding: 18px 20px;
 	background: linear-gradient(135deg, #fafbfd 0%, #f5f7fa 100%);
 	border: 1px solid #e8ecf1;
 	border-left: 4px solid #8faec4;
@@ -371,21 +371,24 @@ body {
 	border-left-color: #6b8cae;
 }
 
-.report-icon {
+.report-thumb {
 	flex-shrink: 0;
-	width: 44px;
-	height: 44px;
-	background: linear-gradient(135deg, #8faec4, #6b8cae);
-	border-radius: 10px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	width: 200px;
+	height: 110px;
+	border-radius: 8px;
+	overflow: hidden;
+	background: #f0f2f5;
 }
 
-.report-icon svg {
-	width: 22px;
-	height: 22px;
-	fill: #fff;
+.report-thumb img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 0.3s ease;
+}
+
+.report-card:hover .report-thumb img {
+	transform: scale(1.03);
 }
 
 .report-content {
