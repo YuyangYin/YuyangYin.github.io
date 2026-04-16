@@ -1,24 +1,33 @@
 <!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
-<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
-<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<html lang="en">
 {% include head.html %}
+
 <body>
-    <div class="container">
+	<div class="site-wrapper">
+		<div class="section-card">
+			{% include yyy_introduction.html %}
+		</div>
 
-		<div class="row"> 
-		      
-			 {% include yyy_introduction.html %}
-			 <hr>
-		     {% include yyy_publication.html %}
-			 <hr>
-			 {% include yyy_intern.html %}
-<!--			 <hr>-->
-<!--		     {% include award.html %}-->
-     </div><!--//main-body-->
+		<div class="section-card">
+			{% include yyy_publication.html %}
+		</div>
 
-{% include footer.html %}
-<div style="display:inline-block;width:200px;">
-<script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=52kjaog3f7q&amp;m=7&amp;c=ff0000&amp;cr1=ff007e&amp;f=arial&amp;l=33" async="async"></script>
+		<div class="section-card">
+			{% include yyy_report.html %}
+		</div>
+
+		<div class="section-card">
+			{% include yyy_intern.html %}
+		</div>
+
+		{% include footer.html %}
+
+		<div style="display:inline-block;width:200px;margin:0 auto;">
+			<script type="text/javascript"
+				src="//rf.revolvermaps.com/0/0/8.js?i=52kjaog3f7q&amp;m=7&amp;c=ff0000&amp;cr1=ff007e&amp;f=arial&amp;l=33"
+				async="async"></script>
+		</div>
+	</div>
 </body>
+
 </html>

@@ -1,80 +1,61 @@
-﻿<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .col-xs-3 {
-            width: 25%;
-        }
-        .col-xs-9 {
-            width: 75%;
-        }
-        .photo img {
-            width: 100%; /* This makes the image take the full width of its parent div */
-            height: auto; /* This maintains the aspect ratio of the image */
-        }
-    </style>
-</head>
-
-<div class='row'>
-    <div class='col-xs-3'>
-		<div class='photo'>
-			<img src="assets/images/yyy2.jpg" alt="photo" height="270" width="210">
-		</div>
+﻿<div class="profile-section">
+	<div class="profile-photo">
+		<img src="assets/images/IMG_1959.JPG" alt="Yuyang Yin">
 	</div>
-	<div class='col-xs-9'>
-			<h3>
-				Yuyang Yin 尹雨阳
-			</h3>
-			<p>
-			I am currently a third year Ph.D student at Beijing Jiaotong University (BJTU) in <a href="http://mepro.bjtu.edu.cn/researcher.html"> MePro</a>, advised by Prof. <a href="https://weiyc.github.io/index.html">Yuchao Wei</a>.
-            		I work closely with <a href="https://scholar.google.com/citations?user=pxFyKAIAAAAJ&hl=zh-CN"> Prof. Atlas (Zhangyang) Wang</a> at the University of Texas at Austin and <a href="https://yikaiw.github.io/">Prof. Yikai Wang</a> at Beijing Normal University. 
-				<!-- I was a student researcher at Centre for Frontier AI in <a href="https://www.a-star.edu.sg/">A*Star,Singapore</a>, advised by Dr.<a href="https://sites.google.com/site/pingliu264/"> Ping Liu</a>(Jan 2023 - July 2023). -->
-			</p>
+	<div class="profile-info">
+		<h1 class="profile-name">Yuyang Yin <span class="profile-name-cn">尹雨阳</span></h1>
 
+		<p class="profile-bio">
+			I am currently a third year Ph.D student at Beijing Jiaotong University (BJTU) in
+			<a href="http://mepro.bjtu.edu.cn/researcher.html">MePro</a>, advised by Prof.
+			<a href="https://weiyc.github.io/index.html">Yuchao Wei</a>.
+			I work closely with
+			<a href="https://scholar.google.com/citations?user=pxFyKAIAAAAJ&hl=zh-CN">Prof. Atlas (Zhangyang) Wang</a>
+			at the University of Texas at Austin and
+			<a href="https://yikaiw.github.io/">Prof. Yikai Wang</a> at Beijing Normal University.
+			Now, I'm a research intern at Tencent Hunyuan3D world model group advised by
+			<a href="https://tengfei-wang.github.io/" target="_blank">Dr. Tengfei Wang</a> and
+			<a href="https://ewrfcas.github.io/" target="_blank">Dr. Chenjie Cao</a>.
+		</p>
 
-			
-			<h3>
-			Research Interests 
-			</h3>
-			<p>
-			My research focuses on AIGC, particularly at the intersection of video and 3D domains.
-			</p>
+		<div class="info-grid">
+			<div class="info-block">
+				<h4>Research Interests</h4>
+				<p>World Model and AIGC, particularly at the intersection of video and 3D domains.</p>
+			</div>
+			<div class="info-block">
+				<h4>Service</h4>
+				<p>Reviewer for ICML, ICLR, NeurIPS, CVPR, ECCV etc.</p>
+			</div>
+			<div class="info-block">
+				<h4>Education</h4>
+				<p>
+					<span class="edu-item">
+						<span>Ph.D &middot; Beijing Jiaotong University</span>
+						<span class="edu-year">2023 – present</span>
+					</span>
+				</p>
+				<p>
+					<span class="edu-item">
+						<span>B.S. &middot; Beijing Jiaotong University</span>
+						<span class="edu-year">2019 – 2023</span>
+					</span>
+				</p>
+			</div>
+		</div>
 
-
-			<h3>
-				Education History
-			</h3>
-			<p>
-			Ph.D student Beijing Jiaotong University    2023-present
-			</p>
-			<p>
-			B.D.  Beijing Jiaotong University    2019-2023
-			</p>
-
-			<h3>
-				Social Work
-			</h3>
-			<p>
-			Reviewer for ICML 2025, ICLR 2025, NIPS 2024, ACM MM 2024 and TIP.  
-			</p>
-	
-
-
-		<h3 style="padding-top:-5px"></h3>
-			
+		<div class="contact-links">
 			{% if site.email %}
-				 <a href="mailto: {{yuyangyin@bjtu.edu.cn}}"><i class="fa fa-envelope"></i> &nbsp; {{site.email}}</a>
+			<a class="contact-link" href="mailto:yuyangyin@bjtu.edu.cn">
+				<i class="fa fa-envelope"></i> {{site.email}}
+			</a>
 			{% endif %}
-			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-<!--			{% if site.website_zhihu %}-->
-<!--				 <a href="https://www.zhihu.com/people/liao-zi-61" target="_blank"><i class="fa fa-globe"></i> &nbsp; {{site.website_zhihu}}</a>-->
-<!--			{% endif %}		-->
- 			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-	                {% if site.website_google %}
-				 <a href="https://scholar.google.com/citations?hl=zh-CN&user=r100Qh4AAAAJ" target="_blank"><i class="fa fa-globe"></i> &nbsp; {{site.website_google}}</a>
+			{% if site.website_google %}
+			<a class="contact-link" href="https://scholar.google.com/citations?hl=zh-CN&user=r100Qh4AAAAJ"
+				target="_blank">
+				<i class="fa fa-graduation-cap"></i> {{site.website_google}}
+			</a>
 			{% endif %}
-			
+		</div>
 	</div>
 </div>
