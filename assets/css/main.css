@@ -141,10 +141,9 @@ body {
 /* ======= Info Grid ======= */
 .info-grid {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 16px 32px;
+	grid-template-columns: 1fr;
+	gap: 18px;
 	margin-top: 20px;
-	align-items: start;
 }
 
 .info-block h4 {
