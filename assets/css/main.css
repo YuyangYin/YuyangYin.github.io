@@ -144,6 +144,7 @@ body {
 	grid-template-columns: 1fr 1fr;
 	gap: 16px 32px;
 	margin-top: 20px;
+	align-items: start;
 }
 
 .info-block h4 {
@@ -167,6 +168,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: baseline;
+	width: 100%;
 }
 
 .info-block .edu-year {
