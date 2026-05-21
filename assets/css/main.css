@@ -78,12 +78,12 @@ body {
 
 .profile-photo {
 	flex-shrink: 0;
-	width: 200px;
+	width: 260px;
 }
 
 .profile-photo img {
-	width: 200px;
-	height: 240px;
+	width: 260px;
+	height: 194px;
 	object-fit: cover;
 	border-radius: 14px;
 	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
@@ -335,6 +335,107 @@ body {
 	text-decoration: none;
 }
 
+/* ======= Citation Badge (live from Google Scholar) ======= */
+.pub-citation {
+	display: inline-flex;
+	align-items: center;
+	gap: 5px;
+	font-size: 11.5px;
+	font-weight: 600;
+	color: #b08a3e;
+	padding: 3px 9px;
+	border: 1px solid #ecdcb3;
+	border-radius: 6px;
+	background: linear-gradient(180deg, #fff8e6 0%, #fdf1cf 100%);
+	cursor: default;
+	user-select: none;
+	transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.pub-citation .fa {
+	font-size: 10px;
+	opacity: 0.85;
+}
+
+.pub-citation::after {
+	content: "cites";
+	font-size: 10px;
+	font-weight: 500;
+	color: #b39455;
+	letter-spacing: 0.3px;
+	text-transform: uppercase;
+}
+
+.pub-citation.is-loading {
+	color: #aaa;
+	border-color: #e6e6e6;
+	background: #fafafa;
+}
+
+.pub-citation.is-loading::after {
+	color: #bbb;
+}
+
+.pub-citation.is-loading .pub-citation-num {
+	display: inline-block;
+	min-width: 18px;
+	text-align: center;
+	animation: pub-citation-pulse 1.4s ease-in-out infinite;
+}
+
+.pub-citation.is-ready {
+	box-shadow: 0 1px 4px rgba(176, 138, 62, 0.15);
+}
+
+.pub-citation.is-ready:hover {
+	transform: translateY(-1px);
+	box-shadow: 0 3px 10px rgba(176, 138, 62, 0.22);
+}
+
+.pub-citation.is-error {
+	display: none;
+}
+
+@keyframes pub-citation-pulse {
+	0%, 100% { opacity: 0.4; }
+	50% { opacity: 1; }
+}
+
+/* ======= Under Review placeholder thumb & abstract ======= */
+.pub-item--review {
+	background: #fafbfd;
+	border: 1px dashed #d6deea;
+}
+
+.pub-thumb--placeholder {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(135deg, #eef2f8 0%, #dde6f1 100%);
+	color: #6f88a8;
+	font-family: 'Inter', sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	text-align: center;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.pub-thumb-text {
+	line-height: 1.25;
+	text-transform: uppercase;
+}
+
+.pub-abstract {
+	font-family: 'Source Serif 4', 'Times New Roman', serif;
+	font-size: 13px;
+	line-height: 1.6;
+	color: #4a5568;
+	margin-top: 6px;
+	text-align: justify;
+}
+
 /* ======= Sub-section Title ======= */
 .sub-section-title {
 	font-family: 'Inter', sans-serif;
@@ -580,12 +681,12 @@ body {
 	}
 
 	.profile-photo {
-		width: 160px;
+		width: 220px;
 	}
 
 	.profile-photo img {
-		width: 160px;
-		height: 192px;
+		width: 220px;
+		height: 164px;
 	}
 
 	.info-grid {
