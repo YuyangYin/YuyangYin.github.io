@@ -78,13 +78,14 @@ body {
 
 .profile-photo {
 	flex-shrink: 0;
-	width: 260px;
+	width: 240px;
 }
 
 .profile-photo img {
-	width: 260px;
-	height: 194px;
+	width: 240px;
+	height: 320px;
 	object-fit: cover;
+	object-position: 50% 18%;
 	border-radius: 14px;
 	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 	border: 3px solid #fff;
@@ -707,7 +708,7 @@ body {
 
 	.profile-photo img {
 		width: 220px;
-		height: 164px;
+		height: 290px;
 	}
 
 	.info-grid {
