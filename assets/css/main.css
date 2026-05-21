@@ -177,6 +177,27 @@ body {
 	margin-left: 12px;
 }
 
+.research-interests {
+	list-style: decimal;
+	padding-left: 20px;
+	margin: 4px 0 0;
+	font-size: 14px;
+	color: #4a5568;
+	line-height: 1.6;
+}
+
+.research-interests li {
+	margin-bottom: 6px;
+}
+
+.research-interests li:last-child {
+	margin-bottom: 0;
+}
+
+.research-interests strong {
+	color: #2d3748;
+}
+
 /* ======= Contact Links ======= */
 .contact-links {
 	display: flex;
