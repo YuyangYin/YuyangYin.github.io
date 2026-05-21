@@ -78,12 +78,12 @@ body {
 
 .profile-photo {
 	flex-shrink: 0;
-	width: 240px;
+	width: 210px;
 }
 
 .profile-photo img {
-	width: 240px;
-	height: 320px;
+	width: 210px;
+	height: 280px;
 	object-fit: cover;
 	object-position: 50% 18%;
 	border-radius: 14px;
@@ -142,9 +142,11 @@ body {
 /* ======= Info Grid ======= */
 .info-grid {
 	display: grid;
-	grid-template-columns: 1fr;
-	gap: 18px;
-	margin-top: 20px;
+	grid-template-columns: 1.4fr 1fr;
+	gap: 40px;
+	margin-top: 28px;
+	padding-top: 24px;
+	border-top: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .info-block h4 {
@@ -703,16 +705,17 @@ body {
 	}
 
 	.profile-photo {
-		width: 220px;
+		width: 200px;
 	}
 
 	.profile-photo img {
-		width: 220px;
-		height: 290px;
+		width: 200px;
+		height: 265px;
 	}
 
 	.info-grid {
 		grid-template-columns: 1fr;
+		gap: 20px;
 	}
 
 	.section-title::after {
